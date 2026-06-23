@@ -2,7 +2,7 @@
 
 > *Transformo problemas complexos de negócio em produtos digitais escaláveis — com forte atuação em IA, discovery estratégico e construção orientada por impacto real.*
 
-Recife, PE · [LinkedIn](https://www.linkedin.com/in/liviacoouto/) · Disponível para oportunidades remotas
+Recife, PE · [LinkedIn](https://www.linkedin.com/in/liviacoouto/) 
 
 ---
 
