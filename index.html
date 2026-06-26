@@ -281,15 +281,56 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;
 <!-- HABILIDADES -->
 <section class="section" id="habilidades">
   <div class="sec-label">O que faço bem</div>
-  <div class="skills-grid">
-    <div class="skill-card"><div class="skill-ico"><svg viewBox="0 0 24 24"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73A2 2 0 0 1 12 2M9 14a1 1 0 1 0 2 0 1 1 0 0 0-2 0m4 0a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/></svg></div><div class="skill-title">IA &amp; Produtos AI-First</div><div class="skill-desc">Prompt engineering, LLMs, fluxos conversacionais, avaliação de modelos, produtos AI-first do zero.</div></div>
-    <div class="skill-card"><div class="skill-ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><div class="skill-title">Discovery Estratégico</div><div class="skill-desc">Entrevistas com usuários e stakeholders, CSD matrix, opportunity tree, jobs to be done, benchmarking competitivo.</div></div>
-    <div class="skill-card"><div class="skill-ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div><div class="skill-title">Documentação de Produto</div><div class="skill-desc">PRD, user stories, regras de negócio, critérios de aceite, BRD, release notes.</div></div>
-    <div class="skill-card"><div class="skill-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="4" rx="1"/><rect x="3" y="10" width="11" height="4" rx="1"/><rect x="3" y="16" width="7" height="4" rx="1"/></svg></div><div class="skill-title">Roadmap &amp; Estratégia</div><div class="skill-desc">Priorização orientada a valor, OKRs, alinhamento com C-level, visão de portfólio.</div></div>
-    <div class="skill-card"><div class="skill-ico"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><div class="skill-title">Produtos Regulados &amp; LGPD</div><div class="skill-desc">Tradução de exigências legais em requisitos de produto. Segurança, auditoria e governança de dados.</div></div>
-    <div class="skill-card"><div class="skill-ico"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div><div class="skill-title">Integrações &amp; APIs</div><div class="skill-desc">Produtos com APIs, WhatsApp API (Meta), Zendesk, ManyChat, RD Station e DevOps.</div></div>
-    <div class="skill-card"><div class="skill-ico"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><div class="skill-title">Dados &amp; Métricas</div><div class="skill-desc">Dashboards, análise de performance, Metabase, Amplitude. SEO técnico e decisões orientadas por dados.</div></div>
-    <div class="skill-card"><div class="skill-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="skill-title">Leis de Segurança Digital</div><div class="skill-desc">Computação forense, perícia digital, segurança de rede. Pós-graduação em Computação Forense e Perícia Digital.</div></div>
+  <div class="skills-grid" style="grid-template-columns:repeat(2,1fr)">
+
+    <div class="skill-card">
+      <div class="skill-ico">
+        <svg viewBox="0 0 24 24"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73A2 2 0 0 1 12 2M9 14a1 1 0 1 0 2 0 1 1 0 0 0-2 0m4 0a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/></svg>
+      </div>
+      <div class="skill-title">IA, Produto &amp; Estratégia</div>
+      <div class="skill-desc">
+        <span style="color:var(--nude2);font-weight:500">AI-first &amp; LLMs</span> — Prompt engineering, fluxos conversacionais, produtos AI-first do zero.<br><br>
+        <span style="color:var(--nude2);font-weight:500">Roadmap &amp; Priorização</span> — OKRs, alinhamento com C-level, visão de portfólio, decisões por dados.<br><br>
+        <span style="color:var(--nude2);font-weight:500">Discovery</span> — Entrevistas com usuários e stakeholders, CSD matrix, opportunity tree, JTBD.
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-ico">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      </div>
+      <div class="skill-title">Documentação &amp; Execução</div>
+      <div class="skill-desc">
+        <span style="color:var(--nude2);font-weight:500">Artefatos de produto</span> — PRD, user stories, BRD, critérios de aceite, release notes, especificações funcionais.<br><br>
+        <span style="color:var(--nude2);font-weight:500">Gestão ágil</span> — Scrum, Kanban, backlog, cerimônias, squads multidisciplinares.<br><br>
+        <span style="color:var(--nude2);font-weight:500">Dados &amp; SEO</span> — Dashboards, Metabase, Amplitude, SEO técnico e benchmarking competitivo.
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-ico">
+        <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </div>
+      <div class="skill-title">Regulação, Segurança &amp; Compliance</div>
+      <div class="skill-desc">
+        <span style="color:var(--nude2);font-weight:500">Produtos regulados</span> — Tradução de exigências legais (LGPD, LAI, COBIT) em requisitos de produto.<br><br>
+        <span style="color:var(--nude2);font-weight:500">Governança de dados</span> — Segurança, auditoria, rastreabilidade e políticas de privacidade.<br><br>
+        <span style="color:var(--nude2);font-weight:500">Segurança digital</span> — Computação forense, perícia digital e segurança de rede.
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-ico">
+        <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+      </div>
+      <div class="skill-title">Integrações, APIs &amp; Ecossistema Tech</div>
+      <div class="skill-desc">
+        <span style="color:var(--nude2);font-weight:500">Integrações</span> — APIs, WhatsApp API (Meta), Zendesk, ManyChat, RD Station e ambientes DevOps.<br><br>
+        <span style="color:var(--nude2);font-weight:500">Infraestrutura</span> — AWS, Supabase, Webflow, GitHub e monitoramento com Zabbix e Grafana.<br><br>
+        <span style="color:var(--nude2);font-weight:500">No-code &amp; AI tools</span> — Lovable, Replit, n8n e ferramentas de automação e prototipação rápida.
+      </div>
+    </div>
+
   </div>
 </section>
 
