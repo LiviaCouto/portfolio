@@ -341,9 +341,7 @@ body::before{
 @media(max-width:900px){.wrap{padding:48px 28px}}
 @media(max-width:480px){.wrap{padding:28px 18px}}
 
-/* scroll reveal */
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
-.reveal.in-view{opacity:1;transform:translateY(0)}
+/* scroll reveal removed for reliability */
 
 /* hero widened */
 .hero{gap:64px}
@@ -667,7 +665,7 @@ body::before{
 </div>
 
 <!-- SOBRE MIM -->
-<section class="section reveal" id="sobre">
+<section class="section" id="sobre">
   <div class="sec-label">Sobre mim</div>
   <div class="about-grid">
     <div class="about-text">
@@ -688,7 +686,7 @@ body::before{
 </section>
 
 <!-- PRODUCT CASES -->
-<section class="section section-big reveal" id="cases">
+<section class="section section-big" id="cases">
   <div class="sec-label">Product Cases</div>
 
   <!-- CASE 1: LISTRA LABS -->
@@ -916,7 +914,7 @@ body::before{
 
 </section>
 <!-- LABS & EXPERIMENTOS -->
-<section class="section section-big reveal" id="labs">
+<section class="section section-big" id="labs">
   <div class="sec-label">Labs &amp; Experimentos</div>
   <p style="font-size:18px;color:var(--text2);line-height:1.8;margin-bottom:28px;max-width:680px">Produtos que concebo, desenho e construo de ponta a ponta — onde sou PM, designer e desenvolvedora ao mesmo tempo. É aqui que testo hipóteses, valido ideias e aprendo fazendo.</p>
 
@@ -1166,7 +1164,7 @@ body::before{
   </div>
 </section>
 <!-- HABILIDADES -->
-<section class="section reveal" id="habilidades">
+<section class="section" id="habilidades">
   <div class="sec-label">O que faço bem</div>
   <div class="skills-grid" style="grid-template-columns:repeat(2,1fr)">
 
@@ -1223,7 +1221,7 @@ body::before{
 
 
 <!-- CARREIRA -->
-<section class="section reveal" id="carreira">
+<section class="section" id="carreira">
   <div class="sec-label">Carreira</div>
   <p style="font-size:13px;color:var(--text3);line-height:1.6;margin-bottom:20px;max-width:680px">Trajetória completa. Os cases de maior impacto estão detalhados na seção <a href="#cases" style="color:var(--coral3)">Product Cases</a>.</p>
   <div class="career-list">
@@ -1303,7 +1301,7 @@ body::before{
   </div>
 </section>
 <!-- FORMAÇÃO -->
-<section class="section reveal" id="formacao">
+<section class="section" id="formacao">
   <div class="sec-label">Formação &amp; Base Multidisciplinar</div>
   <div class="edu-block-title">Formação principal</div>
   <div class="edu-main-grid">
@@ -1336,7 +1334,7 @@ body::before{
 </section>
 
 <!-- STACK -->
-<section class="section reveal" id="stack">
+<section class="section" id="stack">
   <div class="sec-label">Stack &amp; Ferramentas</div>
   <div class="stack-cats">
     <div>
@@ -1444,23 +1442,6 @@ function toggleSubcase(card){
   window.scrollTo({top: scrollY, behavior: 'instant'});
 }
 
-// scroll reveal animation
-(function(){
-  var revealEls = document.querySelectorAll('.reveal');
-  if('IntersectionObserver' in window){
-    var observer = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if(entry.isIntersecting){
-          entry.target.classList.add('in-view');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
-    revealEls.forEach(function(el){ observer.observe(el); });
-  } else {
-    revealEls.forEach(function(el){ el.classList.add('in-view'); });
-  }
-})();
 </script>
 </body>
 </html>
