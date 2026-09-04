@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sobre — Lívia do Couto Silva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;color:#1a1a1a;background:#fff}
+a{text-decoration:none;color:inherit;transition:opacity .2s}
+a:hover{opacity:.75}
+img{max-width:100%;display:block}
+
+/* ── NAV ── */
+nav{
+  position:sticky;top:0;z-index:100;
+  background:#fff;
+  border-bottom:1px solid #E8E8E8;
+  padding:0 48px;
+  display:flex;align-items:center;justify-content:space-between;
+  height:72px;
+}
+.nav-brand{font-size:17px !important}
+
+.nav-brand{
+  display:flex;align-items:center;gap:10px;
+  font-size:16px;font-weight:700;color:#092C52;
+}
+.nav-brand-dot{
+  width:16px;height:16px;border-radius:50%;
+  background:#FDDE3F;
+  box-shadow:0 0 0 3px #092C52, 0 0 0 5px #FDDE3F;
+  flex-shrink:0;
+}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links{gap:36px !important}
+.nav-links a{
+  font-size:16px;font-weight:500;color:#3a3a3a;
+  padding-bottom:6px;border-bottom:3px solid transparent;
+  transition:all .2s;
+}
+.nav-links a:hover{color:#092C52;border-bottom-color:#092C52;opacity:1}
+.nav-links a.active{
+  color:#092C52;font-weight:700;
+  border-bottom-color:#FDDE3F;
+}
+@media(max-width:640px){
+  nav{padding:0 20px}
+  .nav-links{gap:20px}
+  .nav-links a{font-size:14px}
+}
+
+/* ── HERO ── */
+.hero{
+  background:#092C52;
+  color:#fff;
+  padding:72px 40px 84px;
+}
+.hero-grid{
+  max-width:1200px;margin:0 auto;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:56px;align-items:center;
+}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-photo-col{order:-1}
+  .hero{padding:56px 24px 64px}
+}
+.hero-eyebrow{
+  font-size:13px;font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;color:#79D3D6;
+  margin-bottom:18px;
+}
+.hero-title{
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(36px,5vw,58px);
+  font-weight:700;line-height:1.05;
+  letter-spacing:-.02em;color:#fff;
+  margin-bottom:22px;
+}
+.hero-sub{
+  font-size:18px;line-height:1.65;
+  color:#D6DCEB;max-width:32em;
+  margin-bottom:32px;
+}
+.hero-btns{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:44px}
+.btn-primary{
+  font-weight:600;font-size:15px;
+  padding:14px 24px;border-radius:10px;
+  background:#FDDE3F;color:#092C52;
+  transition:all .2s;
+}
+.btn-primary:hover{background:#ffe84d;opacity:1;transform:translateY(-1px)}
+.btn-outline{
+  font-weight:600;font-size:15px;
+  padding:14px 24px;border-radius:10px;
+  border:1.5px solid rgba(255,255,255,.45);
+  color:#fff;transition:all .2s;
+}
+.btn-outline:hover{border-color:#fff;opacity:1;transform:translateY(-1px)}
+.hero-stats{
+  display:flex;flex-wrap:wrap;gap:36px;
+  padding-top:28px;
+  border-top:1px solid rgba(255,255,255,.16);
+}
+.stat-num{
+  font-family:'DM Serif Display',serif;
+  font-size:38px;font-weight:700;
+  color:#FDDE3F;line-height:1;
+}
+.stat-label{
+  font-size:13px;color:#8FA6C4;
+  margin-top:6px;line-height:1.45;
+}
+.hero-photo-col div{
+  width:100%;aspect-ratio:4/5;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.18);
+  overflow:hidden;
+}
+.hero-photo-col img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:center top;
+}
+
+/* ── SECTIONS ── */
+.section-white{background:#fff}
+.section-gray{background:#F5F5F5}
+.section-dark{background:#092C52;color:#fff}
+.section-wine{background:#3a1c10;color:#fff}
+
+.section-inner{max-width:1200px;margin:0 auto;padding:80px 24px}
+.section-inner-narrow{max-width:900px;margin:0 auto;padding:88px 24px}
+
+.eyebrow{
+  font-size:13px;font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;color:#5E5E5E;
+  margin-bottom:20px;
+}
+.section-dark .eyebrow{color:#79D3D6}
+.section-wine .eyebrow{color:#79D3D6}
+
+/* ── SOBRE MIMI (home) ── */
+.sobre-title{
+  font-family:'DM Serif Display',serif;
+  font-weight:700;font-size:clamp(24px,3vw,34px);
+  line-height:1.25;letter-spacing:-.01em;
+  color:#092C52;margin-bottom:24px;
+}
+.sobre-link{
+  font-weight:600;font-size:15px;color:#003A79;
+  display:inline-flex;align-items:center;gap:4px;
+}
+.sobre-link:hover{opacity:1;text-decoration:underline}
+
+/* ── CASES GRID ── */
+.cases-header{
+  display:flex;align-items:flex-end;
+  justify-content:space-between;gap:16px;
+  flex-wrap:wrap;margin-bottom:32px;
+}
+.cases-header h2{
+  font-family:'DM Serif Display',serif;
+  font-weight:700;font-size:32px;
+  letter-spacing:-.01em;color:#092C52;
+}
+.cases-link{
+  font-weight:600;font-size:14px;color:#003A79;
+}
+.cases-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+@media(max-width:900px){.cases-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.cases-grid{grid-template-columns:1fr}}
+
+.case-card{
+  border:1px solid #E0E0E0;border-radius:14px;
+  background:#fff;padding:24px;
+  display:flex;flex-direction:column;
+  transition:box-shadow .2s,transform .2s;
+}
+.case-card:hover{
+  box-shadow:0 8px 24px rgba(0,0,0,.09);
+  transform:translateY(-3px);
+}
+.case-card-top{
+  display:flex;align-items:flex-start;gap:14px;
+  margin-bottom:14px;
+}
+.case-logo{
+  width:52px;height:52px;
+  border:1px solid #E0E0E0;border-radius:8px;
+  background:#F9F9FB;overflow:hidden;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  padding:6px;
+}
+.case-logo img{width:100%;height:100%;object-fit:contain}
+.case-cat{
+  font-size:12px;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;
+  margin-bottom:5px;
+}
+.case-title{
+  font-family:'DM Serif Display',serif;
+  font-weight:700;font-size:19px;
+  line-height:1.2;color:#092C52;
+}
+.case-result{
+  font-size:14px;line-height:1.55;color:#5E5E5E;
+  margin-top:auto;padding-top:14px;
+}
+
+/* ── QUOTE ── */
+.quote-box{
+  background:#EEF0F6;border-radius:16px;padding:40px;
+  margin-top:56px;
+}
+.quote-text{
+  font-family:'DM Serif Display',serif;
+  font-weight:700;font-size:22px;
+  line-height:1.4;color:#092C52;
+  margin-bottom:14px;
+}
+.quote-author{font-size:14px;color:#5E5E5E}
+
+/* ── MANIFESTO ── */
+.manifesto-inner{
+  max-width:960px;margin:0 auto;
+  padding:96px 24px;text-align:center;
+}
+.manifesto-title{
+  font-family:'DM Serif Display',serif;
+  font-weight:700;font-size:clamp(28px,4vw,42px);
+  line-height:1.2;letter-spacing:-.01em;
+  color:#fff;margin-bottom:22px;
+}
+.manifesto-title span{color:#FDDE3F}
+.manifesto-body{
+  font-size:17px;line-height:1.7;
+  color:rgba(255,255,255,.75);
+  max-width:38em;margin:0 auto;
+}
+
+/* ── CTA BOX ── */
+.cta-box{
+  background:#E8F4F5;
+  border:1px solid #79D3D6;
+  border-radius:20px;padding:56px;
+  display:flex;align-items:center;
+  justify-content:space-between;gap:40px;
+  flex-wrap:wrap;
+}
+@media(max-width:700px){.cta-box{padding:36px 28px}}
+.cta-box-title{
+  font-family:'DM Serif Display',serif;
+  font-weight:700;font-size:clamp(24px,3.5vw,40px);
+  line-height:1.1;letter-spacing:-.02em;color:#092C52;
+  margin-bottom:14px;
+}
+.cta-box-text{font-size:16px;line-height:1.65;color:#5E5E5E}
+
+/* ── FOOTER ── */
+footer{
+  background:#092C52;color:#fff;
+  padding:56px 40px 32px;
+}
+.footer-inner{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:1.3fr 1fr 1fr;
+  gap:48px;margin-bottom:40px;
+}
+@media(max-width:700px){
+  .footer-inner{grid-template-columns:1fr;gap:28px}
+  footer{padding:40px 24px 24px}
+}
+.footer-brand{
+  font-family:'DM Serif Display',serif;
+  font-size:22px;color:#FDDE3F;margin-bottom:12px;
+}
+.footer-desc{font-size:14px;color:#8FA6C4;line-height:1.7;max-width:260px}
+.footer-col-label{
+  font-size:11px;text-transform:uppercase;
+  letter-spacing:.14em;font-weight:600;
+  color:#79D3D6;margin-bottom:14px;
+}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:14px;color:#D6DCEB}
+.footer-links a:hover{color:#fff;opacity:1}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.12);
+  padding-top:22px;
+  display:flex;justify-content:space-between;
+  flex-wrap:wrap;gap:12px;
+  max-width:1200px;margin:0 auto;
+}
+.footer-copy{font-size:12px;color:rgba(255,255,255,.35)}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in-view{opacity:1;transform:translateY(0)}
+</style>
+<style>
+/* ── SOBRE extras ── */
+.sobre-hero{background:#092C52;color:#fff;padding:72px 40px 84px}
+.sobre-hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+@media(max-width:900px){.sobre-hero-inner{grid-template-columns:1fr;gap:32px}}
+.sobre-hero-photo{border-radius:16px;border:1px solid rgba(255,255,255,.18);overflow:hidden;aspect-ratio:4/5}
+.sobre-hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+
+/* timeline */
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#E0E0E0}
+.tl-item{position:relative;margin-bottom:40px}
+.tl-item:last-child{margin-bottom:0}
+.tl-dot{
+  position:absolute;left:-32px;top:4px;
+  width:16px;height:16px;border-radius:50%;
+  background:#fff;border:2px solid #C0C0C0;
+  flex-shrink:0;
+}
+.tl-dot.current{background:#FDDE3F;border-color:#FDDE3F;box-shadow:0 0 0 4px rgba(253,222,63,.2)}
+.tl-period{font-size:12px;font-weight:600;color:#A0A0A0;letter-spacing:.04em;margin-bottom:4px}
+.tl-role{font-size:17px;font-weight:700;color:#092C52;margin-bottom:3px}
+.tl-company{font-size:15px;color:#5E5E5E;margin-bottom:6px}
+.tl-desc{font-size:14px;color:#7A7A7A;line-height:1.65}
+
+/* recomendações */
+.rec-card{
+  background:#fff;border:1px solid #E0E0E0;border-radius:16px;
+  padding:32px;margin-bottom:20px;
+  position:relative;
+}
+.rec-card::before{
+  content:'\201C';
+  position:absolute;top:20px;left:28px;
+  font-family:'DM Serif Display',serif;
+  font-size:72px;line-height:1;color:#FDDE3F;opacity:.5;
+}
+.rec-text{
+  font-size:16px;line-height:1.75;color:#3a3a3a;
+  padding-top:28px;margin-bottom:20px;
+}
+.rec-author{display:flex;align-items:center;gap:14px}
+.rec-author-icon{
+  width:44px;height:44px;border-radius:50%;
+  background:#092C52;color:#FDDE3F;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'DM Serif Display',serif;font-size:18px;font-weight:700;
+  flex-shrink:0;
+}
+.rec-author-name{font-size:15px;font-weight:700;color:#092C52}
+.rec-author-role{font-size:13px;color:#5E5E5E;margin-top:2px}
+
+/* habilidades */
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:600px){.skills-grid{grid-template-columns:1fr}}
+.skill-card{border:1px solid #E0E0E0;border-radius:14px;padding:24px;background:#fff}
+.skill-title{font-size:16px;font-weight:700;color:#092C52;margin-bottom:10px}
+.skill-desc{font-size:14px;color:#5E5E5E;line-height:1.7}
+
+/* formação */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:600px){.edu-grid{grid-template-columns:1fr}}
+.edu-card{border:1px solid #E0E0E0;border-radius:14px;padding:22px;background:#fff;transition:box-shadow .2s}
+.edu-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.07)}
+.edu-course{font-size:16px;font-weight:700;color:#092C52;margin-bottom:4px}
+.edu-inst{font-size:13px;color:#5E5E5E;margin-bottom:10px}
+.edu-badge{display:inline-block;font-size:11px;font-weight:600;padding:4px 10px;border-radius:999px}
+.badge-grad{background:#EEF0F6;color:#003A79}
+.badge-tec{background:#E8F4F5;color:#235F61}
+.badge-pos{background:#FFF9E6;color:#7A6010}
+
+/* stack */
+.stack-group{margin-bottom:28px}
+.stack-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#5E5E5E;margin-bottom:12px}
+.stack-pills{display:flex;flex-wrap:wrap;gap:8px}
+.stack-pill{font-size:14px;font-weight:500;padding:7px 16px;border-radius:999px;border:1.5px solid #D8D8D8;color:#3a3a3a;background:#fff;transition:all .2s}
+.stack-pill:hover{border-color:#092C52;color:#092C52}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <div class="nav-brand-dot"></div>
+    Lívia Couto
+  </div>
+  <div class="nav-links">
+    <a href="index.html" >Home</a>
+    <a href="sobre.html" class="active">Sobre</a>
+    <a href="portfolio.html">Portfólio</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="sobre-hero">
+  <div style="max-width:1200px;margin:0 auto;padding:48px 48px 56px">
+    <div style="display:inline-block;background:#FDDE3F;color:#092C52;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:8px 18px;border-radius:999px;margin-bottom:20px">Sobre</div>
+    <h1 class="hero-title" style="margin-bottom:10px;font-size:clamp(28px,4vw,44px)">6 anos vivendo os desafios de Produto e Tecnologia</h1>
+    <p class="hero-sub" style="max-width:680px;margin-top:0">Mais de 10 segmentos, times multidisciplinares e produtos regulados. Já fui a única pessoa de produto da empresa em mais de uma ocasião.</p>
+  </div>
+</section>
+
+<!-- QUEM SOU -->
+<section class="section-white">
+  <div class="section-inner-narrow reveal">
+    <div class="eyebrow">Quem eu sou</div>
+    <p class="sobre-title">Pra mim, produto é resolver o problema certo, da forma certa, no tempo certo — e saber comunicar isso com clareza para quem precisa decidir.</p>
+    <p style="font-size:17px;color:#5E5E5E;line-height:1.75;margin-top:20px">Tenho perfil executor com liderança próxima. Opero bem em cenários ambíguos — quando falta processo, clareza ou direção estratégica. Fui professora por mais de uma década antes de migrar para tecnologia, e essa experiência moldou minha escuta, minha comunicação e minha capacidade de traduzir complexidade em entendimento compartilhado.</p>
+    <p style="font-size:17px;color:#5E5E5E;line-height:1.75;margin-top:16px">Hoje lidero produtos AI-first, conduzo discoveries e atuo em ambientes que exigem velocidade e alta assimilação entre equipes multidisciplinares. Tenho visão de portfólio, foco em dados e um cuidado genuíno com a experiência de quem usa o que eu ajudo a construir.</p>
+  </div>
+</section>
+
+<!-- RECOMENDAÇÕES -->
+<section class="section-gray">
+  <div class="section-inner reveal">
+    <div class="eyebrow" style="color:#5E5E5E">Recomendações</div>
+    <h2 style="font-family:'DM Serif Display',serif;font-weight:700;font-size:32px;color:#092C52;margin-bottom:32px">O que dizem sobre mim</h2>
+
+    <div class="rec-cards-stack">
+    <div class="rec-card">
+      <p class="rec-text">Recomendo a Lívia sem ressalvas e com louvor! Tive a felicidade de trabalhar com ela por alguns anos e o que, a princípio, era a promessa de uma profissional em transição de carreira logo se confirmou. Como PM, atuou em um contexto que exigia entendimento de cenário, escuta ativa e, principalmente, tomada de decisões baseada em dados para demonstrarmos valor. Tudo isso foi feito com maestria: manteve um roadmap alinhado às prioridades do negócio, sem perder a capacidade de se adaptar rapidamente às mudanças. A "entrega de valor" acontecia de forma consistente, o que nos permitiu avançar em passos largos. Além da capacidade analítica, a Lívia sempre se destacou pela forma como comunicava as decisões, prioridades e aprendizados com diferentes times. Sua habilidade de traduzir informações complexas em mensagens claras contribuiu para o alinhamento e para a disseminação de uma cultura orientada por dados. Tenho certeza de que continuará gerando impacto positivo por onde passar.</p>
+      <div class="rec-author">
+        <div class="rec-author-icon">JF</div>
+        <div>
+          <div class="rec-author-name">Jefferson Armando Bastos de Freitas</div>
+          <div class="rec-author-role">Head de Produtos · RankMyApp SA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rec-card" style="margin-top:20px">
+      <p class="rec-text">Conheço a Lívia do Couto Silva por meio da sua atuação como Product Owner em projetos da Listra Digital, onde tenho acompanhado de perto seu trabalho. Trata-se de uma profissional excepcionalmente organizada, com forte domínio de gestão de produto e visão de negócio — uma combinação que se reflete na forma como conduz iniciativas de segmentos bastante distintos, traduzindo objetivos estratégicos em entregas concretas e bem estruturadas. Entre suas qualificações, destaco a clareza com que estrutura e comunica demandas: a Lívia escreve histórias de produto precisas e bem narradas, o que evidencia tanto sua capacidade analítica quanto seu cuidado com a comunicação. Ela vem se aprofundando de forma consistente em Inteligência Artificial e na aplicação de dados à tomada de decisão, incorporando esse conhecimento à sua prática profissional de maneira natural e crítica. Considero Lívia do Couto Silva uma candidata altamente qualificada — seu perfil reúne pensamento estruturado, domínio de produtos digitais, familiaridade com dados e uma genuína vocação para integrar tecnologia, comunicação e estratégia.</p>
+      <div class="rec-author">
+        <div class="rec-author-icon">MC</div>
+        <div>
+          <div class="rec-author-name">Mariana Chebly Prata Lima</div>
+          <div class="rec-author-role">Fundadora & CEO · Listra Digital</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LINHA DO TEMPO -->
+<section class="section-white">
+  <div class="section-inner reveal">
+    <div class="eyebrow" style="color:#5E5E5E">Trajetória</div>
+    <h2 style="font-family:'DM Serif Display',serif;font-weight:700;font-size:32px;color:#092C52;margin-bottom:40px">Linha do tempo profissional</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot current"></div>
+          <div class="tl-period">2024 — atual</div>
+          <div class="tl-role">Product Manager</div>
+          <div class="tl-company">Solar Coca-Cola · Recife, PE</div>
+          <div class="tl-desc">Atuo no Clube Coca-Cola — programa de fidelidade B2B com gamificação, missões e medalhas para engajar pontos de venda dentro do aplicativo Solar Mais. Foco em tornar o programa perceptível e valioso para o PDV.</div>
+        </div>
+              <div class="tl-item">
+          <div class="tl-dot current"></div>
+          <div class="tl-period">Jun 2024 — atual</div>
+          <div class="tl-role">Senior Product Manager</div>
+          <div class="tl-company">Listra Digital · Recife, PE</div>
+          <div class="tl-desc">Líder do Listra Labs — célula de inovação que transforma ideias em MVPs validados em 2 sprints. Discovery enxuto, vibe coding com IA e produtos AI-first do zero.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Mai 2024 — Jul 2024</div>
+          <div class="tl-role">Senior Product Owner</div>
+          <div class="tl-company">BSafe Consulting → Confia Trust Tech</div>
+          <div class="tl-desc">Produto de validação de identidade com alta volumetria de CPFs. Redesenhou o fluxo de integração com o Registro Civil, garantindo +40% de continuidade dos dados.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Fev 2023 — Abr 2024</div>
+          <div class="tl-role">Senior Product Manager · Scrum Master</div>
+          <div class="tl-company">Motrix Techknowledge · São Paulo, SP</div>
+          <div class="tl-desc">Plataforma EdTech B2B para escolas bilíngues. Modelou a BNCC completa em grafo de conhecimento com ciência de dados aplicada.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Fev 2023 — Mar 2023</div>
+          <div class="tl-role">Pleno Product Manager · PO</div>
+          <div class="tl-company">RankMyApp · Pulse Solution</div>
+          <div class="tl-desc">Criou a árvore de sentimentação com ChatGPT API — redução de 70% na folha de freelancers. Um dos primeiros cases reais de IA generativa em atendimento em escala.</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Out 2021 — Set 2022</div>
+          <div class="tl-role">Product Owner · Business & Strategy</div>
+          <div class="tl-company">Cadastra · Recife, PE</div>
+          <div class="tl-desc">Agência digital de grande porte. Backlog, cerimônias Scrum e estratégia de resultados para grandes contas nacionais.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Out 2021 — Mar 2023</div>
+          <div class="tl-role">Product Owner — Infraestrutura</div>
+          <div class="tl-company">Neurotech · Recife, PE</div>
+          <div class="tl-desc">Analytics para o mercado financeiro. Infraestrutura crítica via Zabbix, Grafana e AWS. Produto com alta criticidade e zero tolerância a falhas.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Jul 2019 — Set 2021</div>
+          <div class="tl-role">Analista de Requisitos e Suporte Técnico</div>
+          <div class="tl-company">Leadfy Imob · Recife, PE</div>
+          <div class="tl-desc">ImobTech de automação de leads. Requisitos, BRD, testes funcionais e documentação técnica.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">2010 — 2021</div>
+          <div class="tl-role">Professora · Intérprete de Libras</div>
+          <div class="tl-company">Colégio Pentágono · Prefeitura do Recife</div>
+          <div class="tl-desc">Mais de uma década em educação inclusiva — TEA, TDAH, Libras e Robótica. A base que moldou escuta ativa, comunicação clara e empatia como ferramenta de trabalho.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- HABILIDADES -->
+<section class="section-gray">
+  <div class="section-inner reveal">
+    <div class="eyebrow" style="color:#5E5E5E">O que faço bem</div>
+    <h2 style="font-family:'DM Serif Display',serif;font-weight:700;font-size:32px;color:#092C52;margin-bottom:32px">Áreas de atuação</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-title">IA, Produto & Estratégia</div>
+        <div class="skill-desc">AI-first & LLMs — Prompt engineering, fluxos conversacionais, produtos 0→1 com IA.<br><br>Roadmap & Priorização — OKRs, alinhamento C-level, visão de portfólio, decisões por dados.<br><br>Discovery — Entrevistas, CSD matrix, opportunity tree, JTBD.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">Documentação & Execução</div>
+        <div class="skill-desc">Artefatos — PRD, user stories, BRD, critérios de aceite, release notes.<br><br>Gestão ágil — Scrum, Kanban, backlog, cerimônias, squads multidisciplinares.<br><br>Dados & SEO — Dashboards, Metabase, Amplitude, SEO técnico.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">Regulação, Segurança & Compliance</div>
+        <div class="skill-desc">Produtos regulados — LGPD, LAI, COBIT em requisitos de produto.<br><br>Governança de dados — Segurança, auditoria, rastreabilidade, privacidade.<br><br>Segurança digital — Computação forense e perícia digital.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">Integrações, APIs & Ecossistema Tech</div>
+        <div class="skill-desc">Integrações — APIs, WhatsApp API (Meta), Zendesk, ManyChat, RD Station.<br><br>Infraestrutura — AWS, Supabase, Webflow, GitHub, Zabbix, Grafana.<br><br>No-code & AI — Lovable, Replit, n8n e automação rápida.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMAÇÃO -->
+<section class="section-white">
+  <div class="section-inner reveal">
+    <div class="eyebrow" style="color:#5E5E5E">Formação & Base Multidisciplinar</div>
+    <h2 style="font-family:'DM Serif Display',serif;font-weight:700;font-size:32px;color:#092C52;margin-bottom:32px">Formação principal</h2>
+    <div class="edu-grid" style="margin-bottom:36px">
+      <div class="edu-card"><div class="edu-course">Letras: Língua Portuguesa e Inglesa</div><div class="edu-inst">UFPE — Universidade Federal de Pernambuco</div><span class="edu-badge badge-grad">Graduação</span></div>
+      <div class="edu-card"><div class="edu-course">Análise e Desenvolvimento de Sistemas</div><div class="edu-inst">Estácio — Universidade Estácio de Sá</div><span class="edu-badge badge-grad">Graduação</span></div>
+      <div class="edu-card"><div class="edu-course">Informática para Internet</div><div class="edu-inst">IFPE — Instituto Federal de Pernambuco</div><span class="edu-badge badge-tec">Curso Técnico</span></div>
+      <div class="edu-card"><div class="edu-course">Engenharia de Computação</div><div class="edu-inst">UNINTER — Centro Universitário Internacional</div><span class="edu-badge badge-grad">Graduação</span></div>
+    </div>
+    <h3 style="font-family:'DM Serif Display',serif;font-size:24px;color:#092C52;margin-bottom:20px">Especializações</h3>
+    <div class="edu-grid">
+      <div class="edu-card"><div class="edu-course">Inteligência Artificial & Machine Learning</div><div class="edu-inst">Faculdade Anhanguera</div><span class="edu-badge badge-pos">Pós-graduação</span></div>
+      <div class="edu-card"><div class="edu-course">BI, Big Data & Analytics — Ciência de Dados</div><div class="edu-inst">Faculdade Anhanguera</div><span class="edu-badge badge-pos">Pós-graduação</span></div>
+      <div class="edu-card"><div class="edu-course">Gestão e Governança de TI</div><div class="edu-inst">Faculdade Anhanguera</div><span class="edu-badge badge-pos">Pós-graduação</span></div>
+      <div class="edu-card"><div class="edu-course">Computação Forense e Perícia Digital</div><div class="edu-inst">Faculdade Anhanguera</div><span class="edu-badge badge-pos">Pós-graduação</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Lívia do Couto Silva</div>
+      <p class="footer-desc">Senior Product Manager & AI Product Strategist. Este portfólio documenta minha contribuição em cada projeto.</p>
+    </div>
+    <div>
+      <div class="footer-col-label">Navegação</div>
+      <div class="footer-links">
+        <a href="index.html" >Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="portfolio.html">Portfólio</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-label">Contato</div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/liviacoouto/" target="_blank">LinkedIn</a>
+        <a href="mailto:liviacouto.ps@gmail.com">E-mail</a>
+        <a href="https://wa.me/5581986973828" target="_blank">WhatsApp</a>
+        <a href="https://github.com/LiviaCouto" target="_blank">GitHub</a>
+        <a href="http://lattes.cnpq.br/6141184200310942" target="_blank"><em>Lattes</em></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Lívia do Couto Silva · Todos os direitos reservados</span>
+    <span class="footer-copy">Senior Product Manager | AI Product Strategist</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in-view');obs.unobserve(e.target);}})},{threshold:0.1});
+    els.forEach(function(el){obs.observe(el);});
+  }else{els.forEach(function(el){el.classList.add('in-view');});}
+})();
+
+</script>
+</body>
+</html>
